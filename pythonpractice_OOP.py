@@ -11,6 +11,7 @@ class Volunteer:
 		self.status = status
 		self.committee_name = committee_name
 		#print("created a volunteer instance: {}".format(self.full_name))
+		print("{} has officially joined the team!".format(self.full_name))
 
 	#Returns a string representation of the instance	
 	def __repr__(self):
@@ -27,9 +28,6 @@ class Volunteer:
 		Volunteer Status: {}
 		""".format(self.first_name, self.get_email(),self.committee_name ,self.status)
 		print(profile)
-
-	def welcome_message(self):
-		pass
 		
 
 #Represents a CommitteeManager - Subclass. Inherits from Volunteer.
@@ -47,9 +45,10 @@ volunteer1 = Volunteer('Jamie', 'Gullbrand', 'Active', 'Special Events')
 volunteer1.print_profile()
 
 
-manager1 = CommitteeManager('Lara', 'Gechijian', 'Active', 'Special Events', '10000')
-print(manager1)
+manager1 = CommitteeManager('Lara', 'Gech', 'Active', 'Special Events', 10000)
+
 manager1.print_profile()
 
 
-print(volunteer1)
+#print(volunteer1)
+#print(manager1)
