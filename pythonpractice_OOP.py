@@ -11,7 +11,7 @@ class Volunteer:
 		self.status = status
 		self.committee_name = committee_name
 		#print("created a volunteer instance: {}".format(self.full_name))
-		print("{} has officially joined the team!".format(self.full_name))
+		# print("{} has officially joined the team!".format(self.full_name))
 
 	#Returns a string representation of the instance	
 	def __repr__(self):
@@ -41,13 +41,13 @@ class CommitteeManager(Volunteer):
 		else:
 			self.committee_members = committee_members	
 
-volunteer1 = Volunteer('Jamie', 'Gullbrand', 'Active', 'Special Events')
-volunteer1.print_profile()
+# volunteer1 = Volunteer('Jamie', 'Gullbrand', 'Active', 'Special Events')
+# volunteer1.print_profile()
 
 
-manager1 = CommitteeManager('Lara', 'Gech', 'Active', 'Special Events', 10000)
+# manager1 = CommitteeManager('Lara', 'Gech', 'Active', 'Special Events', 10000)
 
-manager1.print_profile()
+# manager1.print_profile()
 
 
 #print(volunteer1)
