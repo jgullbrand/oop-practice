@@ -10,7 +10,10 @@ class TestVolunteer(unittest.TestCase):
 		self.assertEqual(self.volunteer_1.full_name, 'Jamie Gullbrand')
 
 	def test_email(self):
-		self.assertEqual(self.volunteer_1.get_email(), 'Jamie.Gullbrand@org.com')	
+		self.assertEqual(self.volunteer_1.get_email(), 'Jamie.Gullbrand@org.com')
+
+	def test_instance(self):
+		self.assertIsInstance(self.volunteer_1, Volunteer)		
 
 
 class TestCommitteeManager(unittest.TestCase):
